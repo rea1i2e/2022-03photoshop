@@ -1,5 +1,6 @@
-/* リキッドレイアウト対応 */
 @use "global" as *;
+
+/* リキッドレイアウト対応 */
 
 html {
   //~375px
@@ -18,6 +19,11 @@ html {
   @media (min-width: $inner) {
     font-size: 16px;
   }
+}
+
+body {
+  color: $black01;
+  font-family: $japanese-base-font;
 }
 
 /* pcの電話番号発信対応 */
