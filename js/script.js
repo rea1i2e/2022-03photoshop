@@ -23,14 +23,15 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     return false;
   });
 
-  //ドロワーメニュー
-  $("#MenuButton").click(function () {
-    // $(".l-drawer-menu").toggleClass("is-show");
-    // $(".p-drawer-menu").toggleClass("is-show");
-    $(".js-drawer-open").toggleClass("open");
-    $(".drawer-menu").toggleClass("open");
-    $("html").toggleClass("is-fixed");
+  // ハンバーガーアイコンをクリックすると、ドロワーメニューが開閉する
+  $('.js-hamburger').on('click', function () {
+    $(this).toggleClass('is-open');
+    $('.js-drawer-nav').toggleClass('is-open');
+  });
 
+  // ドロワーメニュー内のリンクをクリックすると、ドロワーメニューが閉じる
+  $('.js-drawer-nav a').on('click', function () {
+    $('.js-drawer-nav').toggleClass('is-open');
   });
 
 

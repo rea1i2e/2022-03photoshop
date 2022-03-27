@@ -1,0 +1,40 @@
+@use "global" as *;
+
+.c-section-title__english {
+  font-family: $english-base-font;
+  font-size: rem(32);
+  font-weight: $bold;
+  text-transform: uppercase;
+  @include mq() {
+    font-size: rem(48);
+  }
+}
+
+.c-section-title__japanese {
+  position: relative;
+  margin-left: rem(32);
+  color: $blue01;
+  font-size: rem(20);
+  font-weight: $medium;
+  line-height: 1;
+  @include mq() {
+    font-size: rem(24);
+  }
+}
+
+.c-section-title__japanese::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top:0;
+  left: rem(-14);
+  height: rem(26.248809496813);
+  width: 1px;
+  transform:rotate(40.364536573097deg);
+  // transform-origin: top left;
+  background-color: $blue01;
+  @include mq() {
+    height: rem(34.71310991542);
+    transform:rotate(41.496468355216deg);
+  }
+}
