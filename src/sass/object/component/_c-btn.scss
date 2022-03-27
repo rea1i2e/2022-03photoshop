@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.c-btn {
+  display: inline-block;
+  width: rem(256);
+  padding-top: rem(15);
+  padding-bottom: rem(15);
+  background-color: $blue01;
+  box-shadow: 0 2px 4px rgba(0, 51, 51, 0.29);
+  color: $white01;
+  text-align: center;
+  @include mq() {
+    padding-top: rem(25);
+    padding-bottom: rem(23);
+    }
+}
+
+.c-btn__arrow {
+  display: inline-block;
+  width: 16px;
+  height: 6px;
+  border-bottom: 1px solid $white01;
+  border-right: 1px solid $white01;
+  transform: skew(45deg);
+  margin-left: rem(16);
+  margin-bottom: rem(4);
+}
