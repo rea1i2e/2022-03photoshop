@@ -1,5 +1,13 @@
 @use "global" as *;
 
 .p-header {
-  background-image: linear-gradient(to top, var(--cool-blue), #182848);
+  background-image: linear-gradient(to right, $blue01, $navy01);
+}
+
+.p-header__logo {
+  width: rem(120);
+}
+
+.p-header__hamburger {
+  width: rem(20);
 }
