@@ -188,4 +188,9 @@ select::-ms-expand {
     padding-left: 25px;
   }
 }
+
+.p-header {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(var(--cool-blue)), to(#182848));
+  background-image: linear-gradient(to top, var(--cool-blue), #182848);
+}
 /*# sourceMappingURL=styles.css.map */
