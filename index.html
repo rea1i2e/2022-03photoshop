@@ -33,15 +33,55 @@
 
 <body>
   <header class="l-header p-header js-header">
-    <h1 class="p-header__logo c-logo">
-      <a href="#"><img src="images/common/logo-w.svg" alt="株式会社園崎組のロゴ画像"></a>
-    </h1>
-    <nav class="p-header-nav js-drawer-nav">
+    <div class="p-header__inner">
+      <h1 class="p-header__logo c-logo">
+        <a href="#"><img src="images/common/logo-w.svg" alt="株式会社園崎組のロゴ画像"></a>
+      </h1>
+      <nav class="p-header__header-nav p-header-nav js-drawer-nav">
+        <ul class="p-header-nav__items">
+          <li class="p-header-nav__item is-active">
+            <a class="p-header-nav__link" href="#">
+              <span class="p-header-nav__japanese-menu">トップ</span>
+              <span class="p-header-nav__english-menu">top</span>
+            </a>
+          </li>
+          <li class="p-header-nav__item">
+            <a class="p-header-nav__link" href="#">
+              <span class="p-header-nav__japanese-menu">事業内容</span>
+              <span class="p-header-nav__english-menu">services</span>
+            </a>
+          </li>
+          <li class="p-header-nav__item">
+            <a class="p-header-nav__link" href="#">
+              <span class="p-header-nav__japanese-menu">園崎組について</span>
+              <span class="p-header-nav__english-menu">about</span>
+            </a>
+          </li>
+          <li class="p-header-nav__item">
+            <a class="p-header-nav__link" href="#">
+              <span class="p-header-nav__japanese-menu">園崎組の実績</span>
+              <span class="p-header-nav__english-menu">works</span>
+            </a>
+          </li>
+          <li class="p-header-nav__item">
+            <a class="p-header-nav__link" href="#">
+              <span class="p-header-nav__japanese-menu">採用情報</span>
+              <span class="p-header-nav__english-menu">recruit</span>
+            </a>
+          </li>
+          <li class="p-header-nav__item">
+            <a class="p-header-nav__link" href="#">
+              <span class="p-header-nav__japanese-menu">お問い合わせ</span>
+              <span class="p-header-nav__english-menu">contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button class="p-header__hamburger c-hamburger js-hamburger u-mobile">
+        <span class="c-hamburger__line"></span>
+      </button>
 
-    </nav>
-    <button class="p-header__hamburger c-hamburger js-hamburger">
-      <span class="c-hamburger__line"></span>
-    </button>
+    </div>
     
   </header>
 
