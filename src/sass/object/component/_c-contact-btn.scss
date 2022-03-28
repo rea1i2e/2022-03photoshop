@@ -1,0 +1,55 @@
+@use "global" as *;
+
+.c-contact-btn {
+  display: inline-block;
+  position: relative;
+  width: rem(335);
+  padding-top: rem(19);
+  padding-bottom: rem(15);
+  background-color: $red01;
+  box-shadow: 0px 2px 4px 0 rgba(25, 25, 25, 0.46);
+    color: $white01;
+  text-align: center;
+  @include mq() {
+    width: rem(320);
+    padding-top: rem(28);
+    padding-bottom: rem(28);
+    font-size: rem(16);
+    }
+}
+
+.c-contact-btn::before {
+  content: "";
+  background-image: url(../images/common/Backhoe@2x.svg);
+  position: absolute;
+  top: 50%;
+  transform: translateY( -50% );
+  left: rem(24);
+  width: rem(16);
+  height: rem(12);
+  background-size: contain;
+}
+
+.c-contact-btn--black::before {
+  background-image: url(../images/common/Factory@2x.svg);
+}
+
+  .c-contact-btn::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 40%;
+  right: rem(24);
+  width: 16px;
+  height: 6px;
+  border-bottom: 1px solid $white01;
+  border-right: 1px solid $white01;
+  transform: skew(45deg);
+  margin-left: rem(16);
+  margin-bottom: rem(4);
+}
+
+.c-contact-btn--black {
+  background-color: $black01;
+}
+
