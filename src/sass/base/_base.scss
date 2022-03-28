@@ -25,6 +25,7 @@ body {
   color: $black01;
   font-family: $japanese-base-font;
   font-size: rem(14);
+  font-weight: normal;
   @include mq() {
     font-size: rem(16);
   }
