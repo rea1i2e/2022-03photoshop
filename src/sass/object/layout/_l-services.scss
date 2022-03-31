@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.l-services {
+  margin-top: rem(120);
+  @include mq() {
+    margin-top: rem(160);
+  }
+}

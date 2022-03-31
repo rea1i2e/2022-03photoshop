@@ -1,0 +1,85 @@
+@use "global" as *;
+@use "sass:math";
+
+.p-card {
+  display: block;
+  width: 100%;
+  counter-increment: number;
+  text-align: left;
+  @include mq() {
+    background-color: $white01;
+    box-shadow: 0 0 10px 0 rgba(25, 25, 25, 0.25);
+  }
+}
+
+.p-card__link {
+  display: block;
+  width: 100%;
+}
+
+.p-card__image {
+  position: relative;
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+  @include mq() {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.p-card__image::before {
+  content: "";
+  display: block;
+  padding-top: 100% * math.div(160, 375);
+  @include mq() {
+    padding-top: 100% * math.div(240, 472);
+  }
+}
+
+.p-card__image::after {
+  content: counter(number, decimal-leading-zero) "";
+  color: $white01;
+  text-align: center;
+  line-height: rem(40);
+  background-color: $navy01;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: rem(40);
+  width: rem(64);
+  @include mq() {
+    top: rem(-8);
+    left: rem(-8);
+  }
+}
+
+.p-card__image img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.p-card__body {
+  padding-top: rem(22);
+  @include mq() {
+    padding: rem(30) rem(24) rem(36);
+  }
+}
+
+.p-card__title {
+  color: $red01;
+  font-size: rem(20);
+  font-weight: $medium;
+}
+
+.p-card__description {
+  line-height: 2;
+  letter-spacing: 0.28px;
+  margin-top: rem(22);
+}

@@ -1,0 +1,49 @@
+@use "global" as *;
+@use "sass:math";
+
+.p-works {
+  padding-bottom: rem(20);
+  background: linear-gradient(
+    110deg,
+    $gray01 0%,
+    $gray01 15%,
+    transparent 15%,
+    transparent 85%,
+    $gray01 85%,
+    $gray01 100%
+  );
+  @include mq() {
+    background: linear-gradient(
+      45deg,
+      $gray01 0%,
+      $gray01 15%,
+      transparent 15%,
+      transparent 85%,
+      $gray01 85%,
+      $gray01 100%
+    );
+  
+    text-align: center;
+  }
+}
+
+.p-works__sub-title {
+  margin-top: rem(31);
+  font-size: rem(24);
+  font-weight: $medium;
+}
+
+.p-works__description {
+  margin-top: rem(30);
+  letter-spacing: rem(0.28);
+  line-height: 2;
+}
+
+.p-works__cards {
+  margin-top: rem(43);
+}
+
+.p-works__btn {
+  margin-top: rem(36);
+  text-align: center;
+}

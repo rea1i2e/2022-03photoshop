@@ -1,0 +1,28 @@
+@use "global" as *;
+@use "sass:math";
+
+.p-cards {
+  @include mq() {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.p-cards__card {
+  @include mq () {
+    width: rem(472);
+  }
+}
+
+.p-cards__card + .p-cards__card {
+  margin-top: rem(40);
+  @include mq() {
+    margin-top: 0;
+  }
+}
+
+.p-cards__card:nth-child(even) {
+  @include mq() {
+    margin-left: rem(40);
+  }
+}

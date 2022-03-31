@@ -1,0 +1,33 @@
+@use "global" as *;
+@use "sass:math";
+
+.p-contact {
+  padding-top: rem(96);
+  padding-bottom: rem(96);
+  background-image: url(../images/common/bckground-image-contact@2x.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;  
+  text-align: left;
+  @include mq() {
+    text-align: center;
+  }
+}
+
+.p-contact__description {
+  color: $white01;
+  line-height: 2;
+  letter-spacing: 0.32px;
+}
+
+.p-contact__contact-btn {
+  margin-top: rem(32);
+}
+
+.c-contact-btn + .c-contact-btn {
+  margin-top: rem(24);
+  @include mq() {
+    margin-top: 0;
+    margin-left: rem(80);
+  }
+}

@@ -1,0 +1,84 @@
+@use "global" as *;
+@use "sass:math";
+
+.p-about {
+  @include mq() {
+    padding-top: rem(40);
+    padding-bottom: rem(40);
+    background-image: url(../images/top/background-image-about@2x.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+  }
+}
+
+.p-about__image {
+  position: relative;
+  width: 100%;
+  @include mq() {
+    display: none;
+  }
+}
+
+.p-about__image::before {
+  content: "";
+  display: block;
+  padding-top: 100% * math.div( 248, 335 );
+}
+
+.p-about__image img {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.p-about__card {
+  @include mq() {
+    width: 100% * math.div( 504, 986 );
+    padding: rem(48);
+    background-color: $white01;
+  }
+}
+
+.p-about__description {
+  margin-top: rem(30);
+  letter-spacing: rem(0.28);
+  line-height: 2;
+}
+
+.p-about__card-image {
+  position: relative;
+  width: 100%;
+  margin-top: rem(32);
+}
+
+.p-about__card-image::before {
+  content: "";
+  display: block;
+  padding-top: 100% * math.div( 120, 408);
+}
+
+.p-about__card-image img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.p-about__btn {
+  margin-top: rem(36);
+  text-align: center;
+  @include mq() {
+    text-align: left;
+  }
+}

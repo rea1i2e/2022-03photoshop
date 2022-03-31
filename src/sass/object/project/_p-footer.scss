@@ -1,0 +1,72 @@
+@use "global" as *;
+@use "sass:math";
+
+.p-footer {
+  padding-top: rem(40);
+  background-color: $navy01;
+  color: $white01;
+}
+
+.p-footer__logo {
+  width: rem(160);
+}
+
+.p-footer__inner.l-inner {
+  max-width: 100%;
+}
+
+.p-footer__inner {
+  display: flex;
+  flex-direction: column-reverse;
+  @include mq() {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.p-footer__information {
+  margin-top: rem(54);
+  padding-bottom: rem(40);
+  @include mq() {
+    padding-bottom: rem(100);
+  }
+}
+
+.p-footer__nav-items {
+  @include mq {
+    writing-mode: vertical-lr;
+  }
+}
+.p-footer__address {
+  margin-top: rem(32);
+  @include mq {
+    // order: 1;
+  }
+}
+
+.p-footer__nav-item {
+  padding-top: rem(12);
+  padding-bottom: rem(12);
+  @include mq() {
+    padding: 0 rem(12)
+  }
+}
+
+.p-footer__nav-item:nth-last-child(2) {
+  margin-top: rem(32);
+  @include mq() {
+    margin-top: 0;
+    margin-left: rem(40);
+  }
+}
+
+.p-footer__copyright {
+  padding: rem(16) rem(20);
+  background-color: $black01;
+  font-size: rem(10);
+  @include mq() {
+    padding: rem(25) rem(25);
+    font-size: rem(12);
+  }
+}

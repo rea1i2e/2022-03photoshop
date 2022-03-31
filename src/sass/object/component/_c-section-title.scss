@@ -1,5 +1,9 @@
 @use "global" as *;
 
+.c-section-title {
+  display: inline-block;
+}
+
 .c-section-title__english {
   font-family: $english-base-font;
   font-size: rem(32);
@@ -8,6 +12,10 @@
   @include mq() {
     font-size: rem(48);
   }
+}
+
+.c-section-title__english--white {
+  color: $white01;
 }
 
 .c-section-title__japanese {
@@ -21,6 +29,11 @@
     font-size: rem(24);
   }
 }
+
+.c-section-title__japanese--white {
+  color: $white01;
+}
+
 
 .c-section-title__japanese::before {
   content: "";
@@ -37,4 +50,8 @@
     height: rem(34.71310991542);
     transform:rotate(41.496468355216deg);
   }
+}
+
+.c-section-title__japanese--white::before {
+  background-color: $white01;
 }
