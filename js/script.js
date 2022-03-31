@@ -4,17 +4,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   var topBtn = $('.pagetop');
   topBtn.hide();
 
-  // ボタンの表示設定
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 70) {
-      // 指定px以上のスクロールでボタンを表示
-      topBtn.fadeIn();
-    } else {
-      // 画面が指定pxより上ならボタンを非表示
-      topBtn.fadeOut();
-    }
-  });
-
   // ボタンをクリックしたらスクロールして上に戻る
   topBtn.click(function () {
     $('body,html').animate({
@@ -32,12 +21,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   // ドロワーメニュー内のリンクをクリックすると、ドロワーメニューが閉じる
   $('.js-drawer-nav a').on('click', function () {
     $('.js-drawer-nav').toggleClass('is-open');
+    $('.js-hamburger').removeClass('is-open');
   });
 
-
-
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
-
   $(document).on('click', 'a[href*="#"]', function () {
     let time = 400;
     let header = $('header').innerHeight();
@@ -47,5 +34,27 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $('html,body').animate({ scrollTop: targetY }, time, 'swing');
     return false;
   });
+
+  let headNav = $("header");
+  let mainVisualHeight = $(".p-mainview").height();
+/* 初期表示、スクロール時にイベント開始 */
+$(window).on("load scroll", function () {
+    /* スクロール位置の高さが200pxより大きい、かつis-fixedクラスがない場合 */
+    if ($(this).scrollTop() > mainVisualHeight && headNav.hasClass("is-fixed") == false) {
+        headNav.css("display", "block");
+        headNav.css({ "top": "-72px" }); /* ヘッダーの高さ分マイナスにする */
+        headNav.addClass("is-fixed");
+        headNav.animate({ "top": 0 }, 600);
+        var changeL = $('.c-logo img').attr('src').replace('logo-w.svg' , 'logo-b.svg');
+        $('.c-logo img').attr('src', changeL);
+      }
+      /* スクロール位置の高さが200pxより小さい、かつis-fixedクラスがある場合 */
+      else if ($(this).scrollTop() < mainVisualHeight && headNav.hasClass("is-fixed") == true) {
+        headNav.removeClass("is-fixed");
+        headNav.css("display", "static");
+        var changeL = $('.c-logo img').attr('src').replace('logo-b.svg' , 'logo-w.svg');
+        $('.c-logo img').attr('src', changeL);
+    }
+});
 
 });

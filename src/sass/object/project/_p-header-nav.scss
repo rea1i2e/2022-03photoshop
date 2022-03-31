@@ -9,7 +9,6 @@
 .p-header-nav__item {
   padding-top: rem(19);
   padding-bottom: rem(19);
-  color: $white01;
 }
 
 .p-header-nav__item + .p-header-nav__item {
@@ -60,6 +59,6 @@
 .p-header-nav__item.is-active {
   color: $black01;
   @include mq() {
-    color: $white01;
+    color: inherit;
   }
 }

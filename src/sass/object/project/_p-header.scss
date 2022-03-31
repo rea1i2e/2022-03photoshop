@@ -3,11 +3,38 @@
 .p-header {
   width: 100%;
   background-image: linear-gradient(to right, $blue01, $navy01);
+  color: $white01;
+
   @include mq() {
     padding-right: rem(39);
     padding-left: rem(39);
   }
 }
+
+.p-header.is-fixed {
+  position: fixed;
+  top:0;
+  right: 0;
+  left: 0;
+  background-color: $white01;
+  background-image: none;
+  color: $black01;
+}
+
+.p-header.is-fixed .p-header-nav__item::before {
+  background-color: $black01;
+}
+
+.p-header.is-fixed .c-hamburger__line,
+.p-header.is-fixed .c-hamburger__line::before,
+.p-header.is-fixed .c-hamburger__line::after {
+  background-color: $black01;
+}
+
+.p-header.is-fixed .c-hamburger.is-open .c-hamburger__line {
+  background-color: transparent;
+}
+
 
 .p-header__inner {
   display: flex;
