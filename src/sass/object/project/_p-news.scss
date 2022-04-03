@@ -5,7 +5,7 @@
   width: 100%;
   background-color: $white01;
   border: solid 1px $navy01;
-  padding: rem(18) rem(8);
+  padding: rem(12) rem(7);
   @include mq() {
     padding:0;
     background-color: $navy01;
@@ -17,11 +17,13 @@
   position: absolute;
   top: rem(-22);
   left: 0;
-  width: rem(74);
-  height: rem(22);
+  padding-right: rem(11);
+  padding-left: rem(11);
+  // width: rem(64);
+  // height: rem(22);
   background-color: $navy01;
   color: $white01;
-  line-height: rem(22);
+  // line-height: rem(22);
   text-align: center;
   text-transform: uppercase;
   @include mq() {
@@ -43,7 +45,7 @@
   height: 6px;
   border-bottom: 1px solid $white01;
   border-right: 1px solid $white01;
-  transform: skew(45deg);
+  transform: skew($tilt02-pc);
   margin-left: rem(16);
   margin-bottom: rem(4);
 }
@@ -56,7 +58,7 @@
     margin-right: auto;
     margin-left: auto;
     padding: rem(12) rem(48);
-    transform: skewX(-40deg);
+    transform: skewX(-$tilt01-pc);
     transform-origin: bottom left;
   }
 }
@@ -64,7 +66,7 @@
 .p-news__date {
   display: inline-block;
   @include mq () {
-    transform: skewX(40deg);
+    transform: skewX($tilt01-pc);
     transform-origin: bottom left;
   }
 }
@@ -72,13 +74,13 @@
 .p-news__label {
   display: inline-block;
   margin-left: rem(2);
-  padding: rem(3) rem(9) rem(5);
+  padding: 0 rem(9) rem(2);
   background-color: $red01;
   border-radius: 12px;
   color: $white01;
   font-size: rem(12);
   @include mq () {
-    transform: skewX(40deg);
+    transform: skewX($tilt01-pc);
     transform-origin: bottom left;
     margin-left: rem(16);
   }
@@ -86,9 +88,9 @@
 
 .p-news__title {
   display: inline-block;
-  margin-left: rem(2);
+  margin-left: rem(5);
   @include mq () {
-    transform: skewX(40deg);
+    transform: skewX($tilt01-pc);
     transform-origin: bottom left;
     margin-left: rem(16);
   }

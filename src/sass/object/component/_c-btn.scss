@@ -3,8 +3,8 @@
 .c-btn {
   display: inline-block;
   width: rem(256);
-  padding-top: rem(15);
-  padding-bottom: rem(15);
+  padding-top: rem(11);
+  padding-bottom: rem(11);
   background-color: $blue01;
   box-shadow: 0 2px 4px rgba(0, 51, 51, 0.29);
   color: $white01;
@@ -22,8 +22,8 @@
   height: 6px;
   border-bottom: 1px solid $white01;
   border-right: 1px solid $white01;
-  transform: skew(45deg);
-  margin-left: rem(16);
-  margin-bottom: rem(4);
+  transform: skew($tilt02-pc);
+  margin-left: rem(11);
+  margin-bottom: rem(3);
 }
 

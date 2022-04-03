@@ -8,9 +8,10 @@
 }
 
 .p-recruit__items {
-  text-align: left;
+  margin-top: rem(24);
   margin-right: calc(50% - 50vw);
   margin-left: calc(50% - 50vw);
+  text-align: left;
   @include mq() {
     display: flex;
     margin-right: 0;
@@ -68,8 +69,8 @@
 
 .p-recruit__title {
   position: absolute;
-  left: rem(16);
-  bottom: rem(8);
+  left: rem(20);
+  bottom: rem(13);
   color: $white01;
   font-size: rem(16);
   font-weight: $normal;
@@ -88,12 +89,12 @@
 
 .p-recruit__arrow {
   display: inline-block;
-  width: 16px;
-  height: 6px;
+  width: rem(16);
+  height: rem(3);
   border-bottom: 1px solid $white01;
   border-right: 1px solid $white01;
-  transform: skew(45deg);
-  margin-left: rem(16);
+  transform: skew($tilt02-pc);
+  margin-left: rem(5);
   margin-bottom: rem(4);
   @include mq() {
     position: absolute;
@@ -104,6 +105,6 @@
 }
 
 .p-recruit__btn {
-  margin-top: rem(120);
+  margin-top: rem(39);
   text-align: center;
 }

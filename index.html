@@ -5,38 +5,50 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
-  <!-- meta情報 -->
-  <title> Photoshopからのコーディング練習</title>
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
-  <!-- 検索結果に表示させない -->
-  <meta name="robots" content="noindex" />
-  <!-- ogp -->
-  <meta property="og:title" content="" />
-  <meta property="og:type" content="" />
-  <meta property="og:url" content="" />
-  <meta property="og:image" content="" />
-  <meta property="og:site_name" content="" />
-  <meta property="og:description" content="" />
+  <!-- Primary Meta Tags -->
+  <title>株式会社 園崎組</title>
+  <meta name="title" content="株式会社 園崎組">
+  <meta name="description" content="私達のモットーは、 「社会基盤から世界をより良くする」こと。">
+  <meta name="robots" content="noindex">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://metatags.io/">
+  <meta property="og:title" content="株式会社 園崎組">
+  <meta property="og:description" content="私達のモットーは、 「社会基盤から世界をより良くする」こと。">
+  <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://metatags.io/">
+  <meta property="twitter:title" content="株式会社 園崎組">
+  <meta property="twitter:description" content="私達のモットーは、 「社会基盤から世界をより良くする」こと。">
+  <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
   <!-- ファビコン -->
   <!-- <link rel="”icon”" href="" /> -->
   <!-- css -->
   <link rel="stylesheet" href="./css/styles.css">
+  <!-- Googleフォント -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Noto+Sans+JP&display=swap" rel="stylesheet">
-
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="./js/script.js"></script>
+  <!-- AOS.js -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
+  <div id="loader">
+    <div class="loader-slide">
+      <img src="images/common/logo-b.svg" alt="ローディングアニメーション">
+    </div>
+  </div>
+
   <header class="l-header p-header js-header">
     <div class="p-header__inner">
       <h1 class="p-header__logo c-logo js-logo">
         <a href="#"><img src="images/common/logo-w.svg" alt="株式会社園崎組のロゴ画像"></a>
-        <!-- <a href="#"><img src="images/common/logo-b.svg" alt="株式会社園崎組のロゴ画像"></a> -->
       </h1>
       <nav class="p-header__header-nav p-header-nav js-drawer-nav">
         <ul class="p-header-nav__items">
@@ -128,12 +140,12 @@
     <div class="p-services__background">
       <div class="p-services__inner l-inner">
         <div class="p-services__media">
-          <figure class="p-services__image">
-            <img src="src/images/top/image-services@2x.jpg" alt="園崎組の事業内容">
+          <figure class="p-services__image" data-aos="fade-right">
+            <img src="images/top/image-services@2x.jpg" alt="園崎組の事業内容">
           </figure>
           <div class="p-services__content">
             <h2 class="p-sevices__section-title c-section-title">
-              <span class="c-section-title__english">sevices</span>
+              <span class="c-section-title__english">services</span>
               <span class="c-section-title__japanese">事業内容</span>
             </h2>
             <p class="p-services__sub-title">
@@ -141,10 +153,10 @@
               世界最高峰の技術で支える
             </p>
             <p class="p-services__description">
-              私達のモットーは、 「社会基盤から世界をより良くする」こと。<br class="u-desctop">そのために最前線で国家規模のプロフェクトに参画することもあれば、世界各国の技術者、研究者と共に次世代の建設機材の研究開発事業も同時に行うことで、業界の進化の促進を担っています。
+              私達のモットーは、 「社会基盤から世界をより良くする」こと。<br class="u-desktop">そのために最前線で国家規模のプロフェクトに参画することもあれば、世界各国の技術者、研究者と共に次世代の建設機材の研究開発事業も同時に行うことで、業界の進化の促進を担っています。
             </p>
             <div class="p-services__btn">
-              <a href="#" class="c-btn">事業内容をさらに知る<span class="c-btn__arrow"></span></a>
+              <a href="#" class="c-btn">事業内容を更に知る<span class="c-btn__arrow"></span></a>
             </div>
           </div>
         </div>
@@ -157,7 +169,7 @@
       <figure class="p-about__image">
         <img src="images/top/image-about@2x--sp.jpg" alt="工場の画像">
       </figure>
-      <div class="p-about__card">
+      <div class="p-about__card" data-aos="fade-up">
         <h2 class="p-coabout__section-title c-section-title">
           <span class="c-section-title__english">about</span>
           <span class="c-section-title__japanese">園崎組について</span>
@@ -187,11 +199,10 @@
         社会を基礎から、<br class="u-mobile">変革してきたプロジェクト
       </p>
       <p class="p-works__description">
-        創業以來より培われた確かな技術力で社会を変革する様々な案件を手掛けてきました。<br>
-        その一部を紹介させていただきます。
+        創業以來より培われた確かな技術力で社会を変革する様々な案件を手掛けてきました。<br class="u-desktop">その一部を紹介させていただきます。
       </p>
       <ul class="p-works__cards p-cards">
-        <li class="p-cards__card p-card">
+        <li class="p-cards__card p-card" data-aos="flip-left">
           <a class="p-card__link" href="#">
             <figure class="p-card__image">
               <img src="images/top/image-works-1@2x.jpg" alt="園崎組の実績画像">
@@ -206,17 +217,17 @@
             </div>
           </a>
         </li>
-        <li class="p-cards__card p-card">
+        <li class="p-cards__card p-card" data-aos="flip-right">
           <a class="p-card__link" href="#">
             <figure class="p-card__image">
-              <img src="images/top/image-works-1@2x.jpg" alt="園崎組の実績画像">
+              <img src="images/top/image-works-2@2x.jpg" alt="園崎組の実績画像">
             </figure>
             <div class="p-card__body">
               <h3 class="p-card__title">
-                施工実績
+                商品納入実績
               </h3>
               <p class="p-card__description">
-                東南アジア某国での国家規模のプロジェクトに参画した際の園崎組のプロジェクトストーリーを記載しています。
+                土木・建設資材のプロフェッショナルとして、現場で必要となる各種資材を提供しています。
               </p>
             </div>
           </a>
@@ -235,11 +246,11 @@
         <span class="c-section-title__english">recruit</span>
         <span class="c-section-title__japanese">採用情報</span>
       </h2>
-      <ul class="p-recruit__items">
+      <ul class="p-recruit__items" data-aos="fade-down-left">
         <li class="p-recruit__item">
           <a href="#">
             <figure class="p-recruit__image">
-              <img src="src/images/top/image-recruit-1@2x.jpg" alt="園崎組を知る">
+              <img src="images/top/image-recruit-1@2x.jpg" alt="園崎組を知る">
               <h3 class="p-recruit__title">
                 園崎組を知る<span class="p-recruit__arrow"></span>
               </h3>
@@ -249,9 +260,9 @@
         <li class="p-recruit__item">
           <a href="#">
             <figure class="p-recruit__image">
-              <img src="src/images/top/image-recruit-1@2x.jpg" alt="園崎組を知る">
+              <img src="images/top/image-recruit-2@2x.jpg" alt="園崎組を知る">
               <h3 class="p-recruit__title">
-                園崎組を知る<span class="p-recruit__arrow"></span>
+                園崎組の一日<span class="p-recruit__arrow"></span>
               </h3>
             </figure>
           </a>
@@ -259,9 +270,9 @@
         <li class="p-recruit__item">
           <a href="#">
             <figure class="p-recruit__image">
-              <img src="src/images/top/image-recruit-1@2x.jpg" alt="園崎組を知る">
+              <img src="images/top/image-recruit-3@2x.jpg" alt="園崎組を知る">
               <h3 class="p-recruit__title">
-                園崎組を知る<span class="p-recruit__arrow"></span>
+                求める人物像<span class="p-recruit__arrow"></span>
               </h3>
             </figure>
           </a>
@@ -284,8 +295,8 @@
         お気軽にご連絡ください。
       </p>
       <div class="p-contact__contact-btn">
-        <a href="#" class="c-contact-btn">施工のご相談</a>
-        <a href="#" class="c-contact-btn c-contact-btn--black">特注制作のご相談</a>
+        <a href="#" class="c-contact-btn" data-aos="flip-left">施工のご相談</a>
+        <a href="#" class="c-contact-btn c-contact-btn--black" data-aos="flip-right">特注制作のご相談</a>
       </div>
     </div>
   </section>
@@ -317,4 +328,5 @@
     </p>
   </footer>
 </body>
+
 </html>

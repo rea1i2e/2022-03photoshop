@@ -39,15 +39,18 @@
 
 .p-card__image::after {
   content: counter(number, decimal-leading-zero) "";
-  color: $white01;
-  text-align: center;
-  line-height: rem(40);
-  background-color: $navy01;
   position: absolute;
   bottom: 0;
   left: 0;
-  height: rem(40);
+  // height: rem(40);
   width: rem(64);
+  padding-top: rem(8);
+  padding-bottom: rem(8);
+  background-color: $navy01;
+  color: $white01;
+  font-size: rem(20);
+  // line-height: rem(40);
+  text-align: center;
   @include mq() {
     top: rem(-8);
     left: rem(-8);
@@ -66,7 +69,7 @@
 }
 
 .p-card__body {
-  padding-top: rem(22);
+  padding-top: rem(16);
   @include mq() {
     padding: rem(30) rem(24) rem(36);
   }
@@ -81,5 +84,5 @@
 .p-card__description {
   line-height: 2;
   letter-spacing: 0.28px;
-  margin-top: rem(22);
+  margin-top: rem(11);
 }

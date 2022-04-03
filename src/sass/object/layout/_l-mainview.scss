@@ -5,7 +5,7 @@
   z-index: 10;
   width: 100%;
   height: calc( 100vh - #{rem(56)});
-  // max-height: rem(611);
+  max-height: rem(611);
   @include mq() {
     height: calc( 100vh - #{rem(80)});
     max-height: rem(688);

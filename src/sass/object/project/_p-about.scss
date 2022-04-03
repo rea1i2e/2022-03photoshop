@@ -39,15 +39,17 @@
 }
 
 .p-about__card {
+  margin-top: rem(27);
   @include mq() {
     width: 100% * math.div( 504, 986 );
+    margin-top: 0;
     padding: rem(48);
     background-color: $white01;
   }
 }
 
 .p-about__description {
-  margin-top: rem(30);
+  margin-top: rem(13);
   letter-spacing: rem(0.28);
   line-height: 2;
 }
@@ -76,7 +78,7 @@
 }
 
 .p-about__btn {
-  margin-top: rem(36);
+  margin-top: rem(27);
   text-align: center;
   @include mq() {
     text-align: left;

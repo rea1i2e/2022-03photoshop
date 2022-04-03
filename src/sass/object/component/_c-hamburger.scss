@@ -18,7 +18,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateY(5px);
+  transform: translateY(7px);
   width: 100%;
   height: rem(2);
   background-color: $white01;
@@ -30,7 +30,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateY(-5px);
+  transform: translateY(-7px);
   width: 100%;
   height: rem(2);
   background-color: $white01;
@@ -42,10 +42,10 @@
 }
 
 .c-hamburger.is-open .c-hamburger__line::before {
-	transform: rotate(45deg);
+	transform: rotate($tilt02-pc);
 }
 
 .c-hamburger.is-open .c-hamburger__line::after {
-	transform: rotate(-45deg);
+	transform: rotate(-$tilt02-pc);
 }
 

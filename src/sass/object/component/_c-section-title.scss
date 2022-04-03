@@ -5,6 +5,7 @@
 }
 
 .c-section-title__english {
+  display: inline-block;
   font-family: $english-base-font;
   font-size: rem(32);
   font-weight: $bold;
@@ -19,8 +20,9 @@
 }
 
 .c-section-title__japanese {
+  display: inline-block;
   position: relative;
-  margin-left: rem(32);
+  margin-left: rem(27);
   color: $blue01;
   font-size: rem(20);
   font-weight: $medium;
@@ -39,9 +41,9 @@
   content: "";
   display: inline-block;
   position: absolute;
-  top:0;
-  left: rem(-14);
-  height: rem(26.248809496813);
+  top:rem(-3);
+  left: rem(-15);
+  height: rem(23);
   width: 1px;
   transform:rotate(40.364536573097deg);
   // transform-origin: top left;

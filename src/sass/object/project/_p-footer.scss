@@ -2,7 +2,7 @@
 @use "sass:math";
 
 .p-footer {
-  padding-top: rem(40);
+  padding-top: rem(28);
   background-color: $navy01;
   color: $white01;
 }
@@ -26,8 +26,8 @@
 }
 
 .p-footer__information {
-  margin-top: rem(54);
-  padding-bottom: rem(40);
+  margin-top: rem(69);
+  padding-bottom: rem(34);
   @include mq() {
     padding-bottom: rem(100);
   }
@@ -39,22 +39,23 @@
   }
 }
 .p-footer__address {
-  margin-top: rem(32);
+  margin-top: rem(17);
+  line-height: 2.1;
   @include mq {
     // order: 1;
   }
 }
 
 .p-footer__nav-item {
-  padding-top: rem(12);
-  padding-bottom: rem(12);
+  padding-top: rem(8);
+  padding-bottom: rem(8.5);
   @include mq() {
     padding: 0 rem(12)
   }
 }
 
 .p-footer__nav-item:nth-last-child(2) {
-  margin-top: rem(32);
+  margin-top: rem(41);
   @include mq() {
     margin-top: 0;
     margin-left: rem(40);
@@ -62,7 +63,10 @@
 }
 
 .p-footer__copyright {
-  padding: rem(16) rem(20);
+  padding-top: rem(12);
+  padding-left: rem(20);
+  padding-bottom: rem(14);
+
   background-color: $black01;
   font-size: rem(10);
   @include mq() {

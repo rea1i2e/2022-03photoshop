@@ -2,19 +2,20 @@
 @use "sass:math";
 
 .p-works {
-  padding-bottom: rem(20);
+  padding-top: rem(17);
+  padding-bottom: rem(38);
   background: linear-gradient(
-    110deg,
+    $tilt02-sp,
     $gray01 0%,
-    $gray01 15%,
-    transparent 15%,
-    transparent 85%,
-    $gray01 85%,
+    $gray01 12%,
+    transparent 12%,
+    transparent 88%,
+    $gray01 88%,
     $gray01 100%
   );
   @include mq() {
     background: linear-gradient(
-      45deg,
+      $tilt02-pc,
       $gray01 0%,
       $gray01 15%,
       transparent 15%,
@@ -27,20 +28,24 @@
   }
 }
 
+.p-works__inner.l-inner {
+  max-width: rem(1050);
+}
+
 .p-works__sub-title {
-  margin-top: rem(31);
+  margin-top: rem(12);
   font-size: rem(24);
   font-weight: $medium;
 }
 
 .p-works__description {
-  margin-top: rem(30);
+  margin-top: rem(16);
   letter-spacing: rem(0.28);
   line-height: 2;
 }
 
 .p-works__cards {
-  margin-top: rem(43);
+  margin-top: rem(38);
 }
 
 .p-works__btn {
