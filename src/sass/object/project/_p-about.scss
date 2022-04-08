@@ -12,6 +12,12 @@
   }
 }
 
+.p-about__inner.l-inner {
+  @include mq() {
+    max-width: rem(1050);
+  }
+}
+
 .p-about__image {
   position: relative;
   width: 100%;
@@ -41,7 +47,8 @@
 .p-about__card {
   margin-top: rem(27);
   @include mq() {
-    width: 100% * math.div( 504, 986 );
+    // width: 100% * math.div( 504, 986 );
+    width: 50.4%;
     margin-top: 0;
     padding: rem(48);
     background-color: $white01;
@@ -82,5 +89,6 @@
   text-align: center;
   @include mq() {
     text-align: left;
+    margin-top: rem(39);
   }
 }

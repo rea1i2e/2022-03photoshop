@@ -25,6 +25,6 @@
 .p-cards__card:nth-child(even) {
   @include mq() {
     // margin-left: rem(40);
-    margin-left: 100% * math.div( 56, 1000);
+    margin-left: 100% * math.div( 40, 1000);
   }
 }

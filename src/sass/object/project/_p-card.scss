@@ -52,8 +52,13 @@
   // line-height: rem(40);
   text-align: center;
   @include mq() {
-    top: rem(-8);
-    left: rem(-8);
+    top: rem(-16);
+    left: rem(-16);
+    bottom: initial;
+    font-size: rem(24);
+    width: rem(55);
+    padding-top: rem(10);
+    padding-bottom: rem(10);
   }
 }
 
@@ -71,7 +76,7 @@
 .p-card__body {
   padding-top: rem(16);
   @include mq() {
-    padding: rem(30) rem(24) rem(36);
+    padding: rem(24) rem(23) rem(30);
   }
 }
 
@@ -79,10 +84,17 @@
   color: $red01;
   font-size: rem(20);
   font-weight: $medium;
+  @include mq() {
+    font-size: rem(24);
+  }
 }
 
 .p-card__description {
   line-height: 2;
-  letter-spacing: 0.28px;
+  letter-spacing: rem(0.28);
   margin-top: rem(11);
+  @include mq() {
+    letter-spacing: rem(0.32);
+    margin-top: rem(15);
+  }
 }

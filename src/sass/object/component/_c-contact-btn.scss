@@ -6,48 +6,86 @@
   width: rem(335);
   padding-top: rem(13);
   padding-bottom: rem(13);
+  padding: rem(13) rem(25);
   background-color: $red01;
   box-shadow: 0px 2px 4px 0 rgba(25, 25, 25, 0.46);
-    color: $white01;
+  color: $white01;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   @include mq() {
+    display: inline-block;
     width: rem(320);
-    padding-top: rem(28);
-    padding-bottom: rem(28);
+    padding-top: rem(22);
+    padding-bottom: rem(23);
     font-size: rem(16);
     }
 }
 
-.c-contact-btn::before {
-  content: "";
-  background-image: url(../images/common/Backhoe@2x.svg);
-  position: absolute;
-  top: 50%;
-  transform: translateY( -50% );
-  left: rem(24);
-  width: rem(15);
-  height: rem(12);
-  background-size: contain;
-}
-
-.c-contact-btn--black::before {
-  background-image: url(../images/common/Factory@2x.svg);
-}
-
-  .c-contact-btn::after {
-  content: "";
+.c-contact-btn__icon {
   display: inline-block;
-  position: absolute;
-  top: 45%;
-  right: rem(26);
-  width: rem(16);
-  height: rem(5);
+  width: rem(15);
+  vertical-align: middle;
+  @include mq() {
+    width: rem(20);
+  }
+}
+
+.c-contact-btn__text {
+  display: inline-block;
+  margin-left: rem(16);
+  vertical-align: middle;
+}
+
+.c-contact-btn__arrow {
+  display: inline-block;
+  width: 16px;
+  height: 6px;
+  vertical-align: middle;
   border-bottom: 1px solid $white01;
   border-right: 1px solid $white01;
   transform: skew($tilt02-pc);
-  margin-left: rem(16);
-  margin-bottom: rem(4);
+  margin-left: rem(11);
+  margin-bottom: rem(3);
+  margin-top: rem(3);
+  @include mq() {
+    margin-top: 0;
+  }
 }
+
+
+
+// .c-contact-btn__text::before {
+//   content: url(../images/common/Backhoe@2x.svg);
+//   vertical-align: middle;
+  // position: absolute;
+  // top: 50%;
+  // transform: translateY( -50% );
+  // left: rem(24);
+  // width: rem(15);
+  // height: rem(12);
+  // background-size: contain;
+// }
+
+// .c-contact-btn--black::before {
+//   background-image: url(../images/common/Factory@2x.svg);
+// }
+
+//   .c-contact-btn::after {
+//   content: "";
+//   display: inline-block;
+//   position: absolute;
+//   top: 45%;
+//   right: rem(26);
+//   width: rem(16);
+//   height: rem(5);
+//   border-bottom: 1px solid $white01;
+//   border-right: 1px solid $white01;
+//   transform: skew($tilt02-pc);
+//   margin-left: rem(16);
+//   margin-bottom: rem(4);
+// }
 
 .c-contact-btn--black {
   background-color: $black01;

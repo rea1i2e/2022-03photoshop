@@ -10,7 +10,9 @@
   background-size: cover;  
   text-align: left;
   @include mq() {
+    padding-top: rem(81);
     text-align: center;
+    padding-bottom: rem(77);
   }
 }
 
@@ -20,16 +22,22 @@
   font-size: rem(16);
   line-height: 2;
   letter-spacing: 0.32px;
+  @include mq() {
+    margin-top: rem(14);
+  }
 }
 
 .p-contact__contact-btn {
   margin-top: rem(26);
+  @include mq() {
+    margin-top: rem(48);
+  }
 }
 
 .c-contact-btn + .c-contact-btn {
   margin-top: rem(25);
   @include mq() {
     margin-top: 0;
-    margin-left: rem(80);
+    margin-left: rem(78);
   }
 }

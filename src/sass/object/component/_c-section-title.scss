@@ -2,6 +2,9 @@
 
 .c-section-title {
   display: inline-block;
+  @include mq() {
+    margin-top: rem(-20);
+  }
 }
 
 .c-section-title__english {
@@ -28,6 +31,7 @@
   font-weight: $medium;
   line-height: 1;
   @include mq() {
+    margin-left: rem(30);
     font-size: rem(24);
   }
 }
@@ -45,12 +49,12 @@
   left: rem(-15);
   height: rem(23);
   width: 1px;
-  transform:rotate(40.364536573097deg);
+  transform:rotate($tilt01-pc);
   // transform-origin: top left;
   background-color: $blue01;
   @include mq() {
-    height: rem(34.71310991542);
-    transform:rotate(41.496468355216deg);
+    left: rem(-18);
+    height: rem(30);
   }
 }
 

@@ -4,22 +4,17 @@
   width: 100%;
   background-image: linear-gradient(to right, $blue01, $navy01);
   color: $white01;
-
-  @include mq() {
-    padding-right: rem(39);
-    padding-left: rem(39);
-  }
 }
 
-.p-header.is-fixed {
-  position: fixed;
-  top:0;
-  right: 0;
-  left: 0;
-  background-color: $white01;
-  background-image: none;
-  color: $black01;
-}
+// .p-header.is-fixed {
+//   position: fixed;
+//   top:0;
+//   right: 0;
+//   left: 0;
+//   background-color: $white01;
+//   background-image: none;
+//   color: $black01;
+// }
 
 .p-header.is-fixed .p-header-nav__item::before {
   background-color: $black01;
@@ -44,11 +39,19 @@
   padding-left: rem(20);
   width: 100%;
   height: 100%;
+  @include mq() {
+    padding-right: rem(39);
+    padding-left: rem(39);
+  }
+
 }
 
 .p-header__logo {
   width: rem(120);
   z-index: 10;
+  @include mq() {
+    width: rem(157);
+  }
 }
 
 .p-header__header-nav {
@@ -57,9 +60,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
   width: 100%;
   height: 100%;
   background-color: $blue01;
@@ -68,10 +69,11 @@
   @include mq() {
     position: static;
     transform: initial;
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: left;
-    margin-left: rem(30);
+    margin-left: rem(25);
     background-color: transparent;
   }
 }
