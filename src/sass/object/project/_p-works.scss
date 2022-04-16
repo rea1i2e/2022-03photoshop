@@ -6,7 +6,6 @@
   padding-bottom: rem(38);
   background: linear-gradient(
     $tilt02-sp,
-    $tilt02-sp,
     $gray01 0%,
     $gray01 12%,
     transparent 12%,
@@ -31,7 +30,9 @@
 }
 
 .p-works__inner.l-inner {
-  max-width: rem(1050);
+  @include mq() {
+    max-width: rem(1050);
+  }
 }
 
 .p-works__sub-title {
@@ -59,7 +60,7 @@
 }
 
 .p-works__cards {
-  margin-top: rem(38);
+  margin-top: rem(37);
   @include mq() {
     margin-top: rem(49);
     transform: translateX(#{rem(16)});
@@ -67,7 +68,7 @@
 }
 
 .p-works__btn {
-  margin-top: rem(36);
+  margin-top: rem(35);
   text-align: center;
   @include mq() {
     margin-top: rem(40);

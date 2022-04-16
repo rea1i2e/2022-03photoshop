@@ -44,11 +44,13 @@
   left: 0;
   // height: rem(40);
   width: rem(64);
-  padding-top: rem(8);
+  padding-top: rem(5);
   padding-bottom: rem(8);
   background-color: $navy01;
   color: $white01;
+  font-family: $english-base-font;
   font-size: rem(20);
+  font-weight: $medium;
   // line-height: rem(40);
   text-align: center;
   @include mq() {

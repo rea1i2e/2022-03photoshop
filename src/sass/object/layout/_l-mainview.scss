@@ -3,11 +3,23 @@
 .l-mainview {
   position: relative;
   z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: rem(26);
   width: 100%;
   height: calc( 100vh - #{rem(56)});
   max-height: rem(611);
+  max-height: 611px;
+  min-height: rem(520);
+  min-height: 520px;
   @include mq() {
     height: calc( 100vh - #{rem(80)});
+    min-height: rem(600);
     max-height: rem(688);
+    min-height: 600px;
+    max-height: 688px;
+    padding-bottom: rem(16);
+
   }
 }

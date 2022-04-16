@@ -1,6 +1,7 @@
 @use "global" as *;
 
 .l-inner {
+  max-width: rem(640);
   width: 100%;
   padding-right: $padding-sp;
   padding-left: $padding-sp;

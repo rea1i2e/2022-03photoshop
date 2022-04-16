@@ -4,6 +4,8 @@
   display: inline-block;
   position: relative;
   width: rem(335);
+  margin-right: auto;
+  margin-left: auto;
   padding-top: rem(13);
   padding-bottom: rem(13);
   padding: rem(13) rem(25);
@@ -17,8 +19,8 @@
   @include mq() {
     display: inline-block;
     width: rem(320);
-    padding-top: rem(22);
-    padding-bottom: rem(23);
+    padding-top: rem(20);
+    padding-bottom: rem(25);
     font-size: rem(16);
     }
 }
@@ -90,4 +92,5 @@
 .c-contact-btn--black {
   background-color: $black01;
 }
+
 

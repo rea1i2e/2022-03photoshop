@@ -27,8 +27,8 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $('.js-drawer-nav').toggleClass('is-open');
   });
 
-  // ドロワーメニュー内のリンクをクリックすると、ドロワーメニューが閉じる
-  $('.js-drawer-nav a').on('click', function () {
+  // ドロワーメニューを開いているときにどこかタップすると、ドロワーメニューが閉じる
+  $('.js-drawer-nav').on('click', function () {
     $('.js-drawer-nav').toggleClass('is-open');
     $('.js-hamburger').removeClass('is-open');
   });

@@ -60,6 +60,7 @@
 .p-header-nav__english-menu {
   margin-top: rem(-5);
   text-transform: uppercase;
+  font-family: $english-base-font;
   @include mq() {
     font-size: rem(10);
     margin-top: rem(-3);

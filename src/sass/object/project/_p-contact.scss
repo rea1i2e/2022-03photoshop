@@ -27,14 +27,15 @@
   }
 }
 
-.p-contact__contact-btn {
+.p-contact__contact-btns {
   margin-top: rem(26);
   @include mq() {
     margin-top: rem(48);
   }
 }
 
-.c-contact-btn + .c-contact-btn {
+.p-contact__contact-btn + .p-contact__contact-btn {
+// .c-contact-btn + .c-contact-btn {
   margin-top: rem(25);
   @include mq() {
     margin-top: 0;

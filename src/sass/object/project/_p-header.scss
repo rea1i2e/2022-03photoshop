@@ -6,15 +6,15 @@
   color: $white01;
 }
 
-// .p-header.is-fixed {
-//   position: fixed;
-//   top:0;
-//   right: 0;
-//   left: 0;
-//   background-color: $white01;
-//   background-image: none;
-//   color: $black01;
-// }
+.p-header.is-fixed {
+  position: fixed;
+  top:0;
+  right: 0;
+  left: 0;
+  background-color: $white01;
+  background-image: none;
+  color: $black01;
+}
 
 .p-header.is-fixed .p-header-nav__item::before {
   background-color: $black01;
@@ -47,12 +47,21 @@
 }
 
 .p-header__logo {
+  height: 100%;
   width: rem(120);
   z-index: 10;
   @include mq() {
     width: rem(157);
   }
 }
+
+.p-header__logo a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
 
 .p-header__header-nav {
   position: fixed;

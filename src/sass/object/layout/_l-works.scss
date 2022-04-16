@@ -1,6 +1,8 @@
 @use "global" as *;
 
 .l-works {
+  width: 100%;
+
   margin-top: rem(122);
   @include mq() {
     margin-top: rem(160);
