@@ -8,10 +8,6 @@
   // }
 }
 
-.c-section-title--white {
-  color: $white01;
-}
-
 .c-section-title__english {
   display: inline-block;
   font-family: $english-base-font;
@@ -41,11 +37,6 @@
   }
 }
 
-.c-section-title--white .c-section-title__japanese {
-  color: $white01;
-}
-
-
 .c-section-title__japanese::before {
   content: "";
   display: inline-block;
@@ -63,6 +54,14 @@
   }
 }
 
-.c-section-title__japanese--white::before {
+.c-section-title--white {
+  color: $white01;
+}
+
+.c-section-title--white .c-section-title__japanese {
+  color: $white01;
+}
+
+.c-section-title--white .c-section-title__japanese::before {
   background-color: $white01;
 }
