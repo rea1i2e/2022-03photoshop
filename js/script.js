@@ -54,15 +54,15 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       headNav.css({ "top": "-72px" }); /* ヘッダーの高さ分マイナスにする */
       headNav.addClass("is-fixed");
       headNav.animate({ "top": 0 }, 600);
-      var changeL = $('.c-logo img').attr('src').replace('logo-w.svg', 'logo-b.svg');
-      $('.c-logo img').attr('src', changeL);
+      var changeL = $('.c-logo').attr('src').replace('logo-w.svg', 'logo-b.svg');
+      $('.c-logo').attr('src', changeL);
     }
     /* スクロール位置の高さが200pxより小さい、かつis-fixedクラスがある場合 */
     else if ($(this).scrollTop() < mainVisualHeight && headNav.hasClass("is-fixed") == true) {
       headNav.removeClass("is-fixed");
       headNav.css("display", "static");
-      var changeL = $('.c-logo img').attr('src').replace('logo-b.svg', 'logo-w.svg');
-      $('.c-logo img').attr('src', changeL);
+      var changeL = $('.c-logo').attr('src').replace('logo-b.svg', 'logo-w.svg');
+      $('.c-logo').attr('src', changeL);
     }
   });
 });

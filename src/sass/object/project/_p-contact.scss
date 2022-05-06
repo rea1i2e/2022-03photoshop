@@ -2,7 +2,7 @@
 @use "sass:math";
 
 .p-contact {
-  padding-top: rem(84);
+  padding-top: rem(90);
   padding-bottom: rem(96);
   background-image: url(../images/common/bckground-image-contact@2x.jpg);
   background-position: center center;
@@ -10,20 +10,20 @@
   background-size: cover;  
   text-align: left;
   @include mq() {
-    padding-top: rem(81);
+    padding-top: rem(75);
     text-align: center;
     padding-bottom: rem(77);
   }
 }
 
 .p-contact__description {
-  margin-top: rem(12);
+  margin-top: rem(19);
   color: $white01;
   font-size: rem(16);
   line-height: 2;
   letter-spacing: 0.32px;
   @include mq() {
-    margin-top: rem(14);
+    margin-top: rem(26);
   }
 }
 

@@ -82,19 +82,9 @@
 }
 
 .p-news__label {
-  display: inline-block;
   margin-left: rem(2);
-  padding: 0 rem(9) rem(2);
-  background-color: $red01;
-  border-radius: rem(12);
-  color: $white01;
-  font-size: rem(12);
   @include mq () {
-    transform: skewX($tilt01-pc);
-    transform-origin: bottom left;
     margin-left: rem(21);
-    padding: rem(5) rem(16) rem(3) rem(15);
-    border-radius: rem(4);
   }
 }
 

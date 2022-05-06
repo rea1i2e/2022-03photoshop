@@ -2,7 +2,7 @@
 @use "sass:math";
 
 .p-works {
-  padding-top: rem(17);
+  padding-top: rem(27);
   padding-bottom: rem(38);
   background: linear-gradient(
     $tilt02-sp,
@@ -14,6 +14,8 @@
     $gray01 100%
   );
   @include mq() {
+    padding-top: 0;
+    padding-bottom: 0;
     background: linear-gradient(
       // $tilt02-pc,
       49.5deg,
@@ -24,7 +26,6 @@
       $gray01 83%,
       $gray01 100%
     );
-    padding-bottom: 0;
     text-align: center;
   }
 }
@@ -35,18 +36,19 @@
   }
 }
 
-.p-works__sub-title {
-  margin-top: rem(12);
-  font-size: rem(24);
-  font-weight: $medium;
+.p-works__section-title{
   @include mq() {
-    font-size: rem(32);
+    margin-top: rem(-6);
   }
 }
 
-.p-works__section-title.c-section-title {
+.p-works__sub-title {
+  margin-top: rem(19);
+  font-size: rem(24);
+  font-weight: $medium;
   @include mq() {
-    margin-top: rem(-34);
+    margin-top: rem(23);
+    font-size: rem(32);
   }
 }
 

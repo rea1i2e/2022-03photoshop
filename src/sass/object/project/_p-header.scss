@@ -46,7 +46,7 @@
 
 }
 
-.p-header__logo {
+.p-header__title {
   height: 100%;
   width: rem(120);
   z-index: 10;
@@ -55,7 +55,7 @@
   }
 }
 
-.p-header__logo a {
+.p-header__title a {
   display: flex;
   align-items: center;
   height: 100%;

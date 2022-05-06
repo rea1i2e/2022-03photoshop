@@ -45,20 +45,23 @@
 }
 
 .p-about__card {
-  margin-top: rem(28);
+  margin-top: rem(36);
   @include mq() {
     width: 100% * math.div( 504, 1015 );
     // width: 50.4%;
     margin-top: 0;
-    padding: rem(48);
+    padding: rem(41) rem(48) rem(48);
     background-color: $white01;
   }
 }
 
 .p-about__description {
-  margin-top: rem(13);
+  margin-top: rem(19);
   letter-spacing: rem(0.28);
   line-height: 2;
+  @include mq() {
+    margin-top: rem(25);
+  }
 }
 
 .p-about__card-image {

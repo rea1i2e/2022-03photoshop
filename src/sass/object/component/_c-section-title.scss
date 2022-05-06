@@ -2,9 +2,14 @@
 
 .c-section-title {
   display: inline-block;
-  @include mq() {
-    margin-top: rem(-20);
-  }
+  line-height: 1;
+  // @include mq() {
+  //   margin-top: rem(-20);
+  // }
+}
+
+.c-section-title--white {
+  color: $white01;
 }
 
 .c-section-title__english {
@@ -18,9 +23,9 @@
   }
 }
 
-.c-section-title__english--white {
-  color: $white01;
-}
+// .c-section-title__english--white {
+//   color: $white01;
+// }
 
 .c-section-title__japanese {
   display: inline-block;
@@ -36,7 +41,7 @@
   }
 }
 
-.c-section-title__japanese--white {
+.c-section-title--white .c-section-title__japanese {
   color: $white01;
 }
 

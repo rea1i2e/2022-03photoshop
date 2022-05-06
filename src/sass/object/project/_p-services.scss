@@ -1,12 +1,23 @@
 @use "global" as *;
 @use "sass:math";
 
-// .p-services {
-//   position: relative;
-// }
+.p-services {
+  position: relative;
+  padding-bottom: rem(49);
+  @include mq() {
+    padding-bottom: 0;
+  }
+}
 
-.p-services__background {
-  padding-bottom: rem(48);
+.p-services::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: block;
+  height: 100%;
+  width: 100%;
   background-color: $gray01;
   background: linear-gradient(
     $tilt02-sp,
@@ -16,11 +27,10 @@
     transparent 91%,
     $gray01 91%,
     $gray01 100%
-  );
-  @include mq() {
-    position: relative;
-    padding-bottom: 0;
-    background: linear-gradient(
+    );
+    @include mq() {
+      top:rem(-41);
+      background: linear-gradient(
       // calc(180deg - $tilt02-pc),
       131deg,
       $gray01 0%,
@@ -32,6 +42,35 @@
     );
   }
 }
+
+// .p-services__background {
+//   // padding-top: rem(41);
+//   padding-bottom: rem(48);
+//   background-color: $gray01;
+//   background: linear-gradient(
+//     $tilt02-sp,
+//     $gray01 0%,
+//     $gray01 59%,
+//     transparent 59%,
+//     transparent 91%,
+//     $gray01 91%,
+//     $gray01 100%
+//   );
+//   @include mq() {
+//     position: relative;
+//     padding-bottom: 0;
+//     background: linear-gradient(
+//       // calc(180deg - $tilt02-pc),
+//       131deg,
+//       $gray01 0%,
+//       $gray01 68%,
+//       transparent 68%,
+//       transparent 895%,
+//       $gray01 89%,
+//       $gray01 100%
+//     );
+//   }
+// }
 
 .p-services__inner.l-inner {
   @include mq() {
@@ -45,7 +84,7 @@
   @include mq() {
     display: flex;
     align-items: flex-start;
-    transform: translateY(rem(41));
+    // transform: translateY(rem(41));
     // margin-left: calc(50% - 50vw);
   }
 }
@@ -85,7 +124,7 @@
 }
 
 .p-services__content {
-  margin-top: rem(28);
+  margin-top: rem(35);
   @include mq() {
     width: 40%;
     margin-top: 0;
@@ -94,17 +133,18 @@
   }
 }
 
-// .p-sevices__section-title {
-//   @include mq() {
-//   }
-// }
+.p-sevices__section-title {
+  @include mq() {
+    margin-top: rem(-6);
+  }
+}
 
 .p-services__sub-title {
-  margin-top: rem(12);
+  margin-top: rem(20);
   font-size: rem(24);
   font-weight: $medium;
   @include mq() {
-    margin-top: rem(15);
+    margin-top: rem(26);
     font-size: rem(32);
     line-height: 1.45;
   }

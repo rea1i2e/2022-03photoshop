@@ -42,9 +42,8 @@
   align-items: center;
   width: 100%;
   height: 100%;
-  padding-top: rem(14.5);
-  padding-bottom: rem(14.5);
-
+  // padding-top: rem(14.5);
+  // padding-bottom: rem(14.5);
   @include mq() {
     justify-content: center;
   }
